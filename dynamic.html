@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calisthenics King</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap%27");
+        
+      :root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  place-items: center;
+  background-image: url("https://img.freepik.com/premium-photo/abstract-natural-purplebluecyan-gradient-photographic-blur-background_636705-2241.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.logo {
+    width: 200px;
+    max-width: 200%;
+    margin-left: 10px;
+    margin-top: -15px;
+    transition: 0.5s ease-out;
+   
+    
+}
+
+.logo:hover {
+    width: 205px;
+    cursor: pointer;
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: sticky;
+  top: 0;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 21.5px;
+  color: var(--color-white);
+  text-decoration: none;
+ 
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+
+
+.slider{
+  
+  width: 1600px;
+  border: 3px solid #00e1ff;
+  margin-top: 2.5px;
+  margin-left: 140px;
+  display: flex;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 15);
+}
+
+.slider2 {
+    width: 1600px;
+  border: 3px solid #00e1ff;
+  margin-left: 140px;
+  margin-top: 140px;
+  display: flex;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 15);
+}
+
+.slider3 {
+    width: 1600px;
+  border: 3px solid #00e1ff;
+  margin-left: 140px;
+  margin-top: 140px;
+  display: flex;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 15);
+}
+
+.slider, .slider2, .slider3 .card{
+  flex: 1;
+  background: #344c69;
+  align-self: center;
+}
+
+.slider .card {
+    height: 835px;
+}
+.slider2 .card {
+    height: 800px;
+}
+
+
+.img{
+  height: 400px;
+  width: 1200px;
+  
+}
+.img img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  margin-left: 190px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 15);
+  border: 3px solid #000;
+  
+}
+.slider, .slider2, .slider3 .card .content{
+  padding: 5px 20px;
+}
+.content {
+  font-weight: bold;
+}
+.card .content .title{
+  text-align: center;
+  color: rgb(71, 100, 228);
+  font-size: 50px;
+  font-weight: 600;
+  -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+}
+
+.card .content p{
+  
+  margin: 15px 0;
+}
+
+p {
+  font-size: 23px;
+  color: rgba(0, 247, 255);
+ 
+}
+.a {
+  font-size: 35px;
+  text-align: center;
+  color: rgba(0, 153, 173, 0.788);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.c {
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <div class="menu-bar">
+    <a href="proekt.html"><img src="logo.jpg" class="logo"></a>
+    <ul>
+      <li><a href="proekt.html">Начало</a></li>
+      <li><a href="#">Меню <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="dynamic.html">Динамични</a></li>
+                <li><a href="static.html">Статични</a></li>
+                <li><a href="complex.html">Комплексни</a></li>
+              </ul>
+            </div>
+      </li>
+      <li><a href="contacti.html">Контакти</a></li>
+  </div>
+
+  
+
+  <div class="slider">
+    <div class="card">
+     <div class="content">
+       <div class="title">
+       Набиране
+       </div>
+     <p class="c">Набирането е физическо упражнение за горната част на тялото, при което то, окачено на ръцете се изтегля нагоре.</p>
+     <div class="img">
+        <img src="b.png">
+     </div>
+     <p class="a"> Техника:</p>
+     <p class="b">Упражнението започва с изпънати ръце над главата, хващайки лоста за набиране. След това тялото се издърпва нагоре чрез ръцете, при което лактите се огъват, а раменете се разширяват, докарвайки лактите до торса. Упражнението се счита за завършено, когато гърдите, брадичката или врата докоснат лоста.</p>
+     </div>
+    </div>
+    </div>
+
+    <div class="slider2">
+        <div class="card">
+         <div class="content">
+           <div class="title">
+           Кофички
+           </div>
+         <p class="c">Кофичките са вид силово упражнение за горната част на тялото, изпълнявано на успоредка.</p>
+         <div class="img">
+            <img src="https://www.muscleandfitness.com/wp-content/uploads/2019/06/man-shoulder-dips-1109.jpg?quality=86&strip=all">
+         </div>
+         <p class="a"> Техника:</p>
+         <p class="b">Тесният захват на ширината на раменете се използва предимно за развиване на триглавия мишничен мускул и в по-малка степен на делтовидния, големия гръден и ромбоидния мускул. Широкият захват поставя допълнителен акцент върху гръдните мускули, подобно на начина, по който вдигането от лег с широк хват би се фокусирало повече върху гръдните мускули и по-малко върху трицепса.</p>
+         </div>
+        </div>
+        </div>
+
+        <div class="slider3">
+            <div class="card">
+             <div class="content">
+               <div class="title">
+                Лицеви опори
+               </div>
+             <p class="c">Лицевите опори са често срещано физическо упражнение извършващо се в хоризонтално положение, чрез повдигане и спускане на тялото с помощта на ръцете.</p>
+             <div class="img">
+                <img src="https://www.fitnesseducation.edu.au/wp-content/uploads/2020/10/Pushups.jpg">
+             </div>
+             <p class="a"> Техника:</p>
+             <p class="b">За изпълнение на лицеви опори е необходимо да се легне на пода с лице към земята, ръцете са изпънати напред, леко пред раменете, пръстите са разперени и сочат напред. Петите са събрани, тялото е изпънато, а главата е леко изправена напред. Упражнението се извършва на две части – спускане надолу и избутване нагоре. При спускане лактите се огъват, докато горната част на ръцете стане успоредна на пода. Следва избутане нагоре, чрез бавно изпъване на ръцете в лактите и връщане в изходна позиция. Всичко това се счита за една лицева опора. Чрез промяна на позицията на тялото може да се концентрира натоварването върху определени мускули.</p>
+             </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
